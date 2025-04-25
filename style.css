@@ -1,101 +1,77 @@
-style.css
-body {
-  font-family: sans-serif;
+* {
   margin: 0;
   padding: 0;
-  background: #f0f0f0;
+  box-sizing: border-box;
 }
 
-.hero {
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #1c1c1c;
+}
+
+.container {
   display: flex;
-  flex-wrap: wrap;
-  padding: 40px;
-  gap: 30px;
-}
-
-.left-side {
-  flex: 1;
-}
-
-.left-side h1 {
-  font-size: 3rem;
-  font weight: bold;
-  margin-bottom: 15px;
-}
-
-.left-side p {
-  color: #555;
-  margin-bottom: 20px;
-  max-width: 400px;
-}
-
-.left-side button {
-  padding: 10px 20px;
-  background: black;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-.logos {
-  margin-top: 40px;
-  display: flex;
-  gap: 20px;
-  opacity: 0.6;
-}
-
-.right-side {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 4rem 6rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.image-container {
-  width: 250px;
-  height: 250px;
-  background: #facc15;
-  border-radius: 50%;
-  overflow: hidden;
+.text-section {
+  max-width: 500px;
+  flex: 1;
 }
 
-.image-container img {
-  width: 100%;
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 span {
+  font-weight: bold;
+  color: #000;
+}
+
+.text-section p {
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+.brands {
+  margin-top: 2rem;
+}
+
+.brands img {
+  max-width: 100%;
   height: auto;
-  text-align:left;
 }
 
-.shapes {
-  display: flex;
-  gap: 10px;
-  margin-top: 30px;
+.visual-section {
+  flex: 1;
+  text-align: center;
 }
 
-.shape {
-  width: 50px;
-  height: 50px;
-}
-
-.blue {
-  background: #38bdf8;
-}
-
-.yellow {
-  background: #fde047;
-}
-
-.purple {
-  background: #8b5cf6;
-}
-
-@media screen and (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .left-side, .right-side {
-    text-align: center;
-  }
+.hero-img {
+  max-width: 100%;
+  height: auto;
 }
