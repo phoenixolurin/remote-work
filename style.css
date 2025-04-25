@@ -62,6 +62,7 @@ body {
 .image-container img {
   width: 100%;
   height: auto;
+  text-align:left;
 }
 
 .shapes {
